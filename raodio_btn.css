@@ -1,0 +1,89 @@
+/***
+ 单选按钮总容器
+**/
+.radio-box{
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+
+/**
+单选按钮容器
+ */
+.input_radio_label{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    font-size:0.55rem;
+    font-family:"PingFang-SC-Medium";
+    font-weight:500;
+    color:rgba(51,51,51,1);
+    position: relative;
+}
+
+/**
+第一个单选按钮容器
+ */
+.input_radio_label:nth-child(1){
+    border-bottom: 0.02rem solid rgba(226,226,226,1);
+}
+
+/**
+单选按钮下的按钮标注
+ */
+.input_radio_label i{
+    font-style:normal;
+    width: 3.826rem;
+    font-size: 0.64rem;
+    color: rgba(51,51,51,1);
+    font-weight: 500;
+    font-family: "PingFang-SC-Medium";
+    text-align: center;
+    height: 2.23rem;
+    line-height: 2.16rem;
+}
+
+/**
+真实单选按钮
+ */
+.input_radio{
+   display: block;
+    opacity: 0;
+    position: absolute;
+    top: 1rem;
+}
+
+/**
+自定义单选按钮
+ */
+.span_radio{
+    margin-right: 0.362rem;
+    background-color:#fff;
+    /*border:0.02rem solid rgba(0,0,0,0.15);*/
+    display:block;
+    width:0.68rem;
+    height: 0.68rem;
+    position:relative;
+}
+
+/**
+自定义单选按钮下的伪元素未选中状态
+ */
+.span_radio:after{
+    content:" ";
+    background: red;
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius:100%;
+}
+
+/**
+自定义单选按钮下的伪元素选中状态
+ */
+.input_radio:checked + .span_radio:after{
+    background-color:#00A1E9;
+    content:" ";
+}
+

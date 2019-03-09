@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<!--font-size以项目的font-size为准，此处为测试demo-->
+<html style="font-size: 46.875px;">
+<head> 
+<meta charset="utf-8">
+<title>属性选择器</title>
+<link rel="stylesheet" href="./raodio_btn.css"/>
+</head> 
+<body>
+<div>
+<!---
+  按钮容器
+  按钮容器涵盖自定义按钮所需的所有元素
+-->
+<label class="input_radio_label">
+  <!--按钮标注，可省-->
+  <i>提现类型：</i>
+  <!--真实按钮-->
+  <input  class="input_radio" type="radio" name="withdrawals-radio" checked="checked">
+  <!--自定义按钮-->
+  <span class="span_radio"></span>
+  <!--提示信息-->
+  <span class="radio-infor">普通提现（到账时间：3-7天）</span>
+</label>
+
+  <label class="input_radio_label">
+    <i></i>
+    <input  class="input_radio" type="radio" name="withdrawals-radio" checked="checked">
+    <span class="span_radio"></span>
+    <span class="withdrawals-infor">普通提现（到账时间：3-7天）</span>
+  </label>
+</div>
+</body>
+</html>
